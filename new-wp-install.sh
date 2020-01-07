@@ -1,6 +1,6 @@
 #!/bin/bash
 # GET ALL USER INPUT
-tput setaf 2; echo "Domain Name (eg. example.com)?"
+tput setaf 2; echo "Domain Name (eg. davidsairai.com)?"
 read DOMAIN
 tput setaf 2; echo "Username (eg. database name)?"
 read USERNAME
@@ -13,9 +13,9 @@ sleep 2;
 tput sgr0
 cd /etc/nginx/sites-available/
 
-sudo wget -qO "$DOMAIN" https://raw.githubusercontent.com/bajpangosh/High-Traffic-wordpress-server-configuration/master/sites-available/example.com.conf
-sudo sed -i -e "s/example.com/$DOMAIN/" "$DOMAIN"
-sudo sed -i -e "s/www.example.com/www.$DOMAIN/" "$DOMAIN"
+sudo wget -qO "$DOMAIN" https://raw.githubusercontent.com/bajpangosh/High-Traffic-wordpress-server-configuration/master/sites-available/davidsairai.com.conf
+sudo sed -i -e "s/davidsairai.com/$DOMAIN/" "$DOMAIN"
+sudo sed -i -e "s/www.davidsairai.com/www.$DOMAIN/" "$DOMAIN"
 sudo ln -s /etc/nginx/sites-available/"$DOMAIN" /etc/nginx/sites-enabled/
 sudo mkdir -p /var/www/"$DOMAIN"/public
 cd /var/www/"$DOMAIN/public"
@@ -57,7 +57,7 @@ echo
 echo
 tput setaf 3;  echo "Installation & configuration succesfully finished."
 echo
-echo "Twitter @bajpangosh"
-echo "E-mail: support@kloudboy.com"
-echo "Bye! Your boy KLOUDBOY!"
+echo "Twitter @davidsairai"
+echo "E-mail: david@sairai.co.za"
+echo "testing my skill set"
 tput sgr0
