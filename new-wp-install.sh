@@ -13,7 +13,7 @@ sleep 2;
 tput sgr0
 cd /etc/nginx/sites-available/
 
-sudo wget -qO "$DOMAIN" https://raw.githubusercontent.com/bajpangosh/High-Traffic-wordpress-server-configuration/master/sites-available/davidsairai.com.conf
+sudo wget -qO "$DOMAIN" https://raw.githubusercontent.com/DavidSairai/High-Traffic-Wordpress-Server/master/davidsairai.conf
 sudo sed -i -e "s/davidsairai.com/$DOMAIN/" "$DOMAIN"
 sudo sed -i -e "s/www.davidsairai.com/www.$DOMAIN/" "$DOMAIN"
 sudo ln -s /etc/nginx/sites-available/"$DOMAIN" /etc/nginx/sites-enabled/
