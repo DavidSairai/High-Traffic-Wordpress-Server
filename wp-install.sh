@@ -103,7 +103,7 @@ echo
 echo
 tput setaf 3;  echo "Installation & configuration succesfully finished."
 echo
-echo "Twitter @bajpangosh"
-echo "E-mail: support@kloudboy.com"
-echo "Bye! Your boy KLOUDBOY!"
+echo "Twitter @davidsairai"
+echo "E-mail: david@sairai.co.za"
+echo "testing my skill set"
 tput sgr0
